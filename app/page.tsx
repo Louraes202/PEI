@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-4 text-center bg-background">
+    <main className="flex min-h-screen flex-col items-center justify-center px-4 text-center bg-background cursor-default">
       
       {/* BLOCO 1: LOGO E SUBTÍTULO */}
       <div className="mb-3 flex flex-col items-center gap-0">
@@ -22,31 +22,31 @@ export default function Home() {
 
       {/* BLOCO 2: TÍTULO PRINCIPAL */}
       <h1 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-7 max-w-2xl">
-        Se és de EI, não vais querer perder.
+        Se és de <span className="hover:text-primary transition-all cursor-default">EI</span>, não vais querer perder.
       </h1>
 
       {/* BLOCO 3: LISTA DE BENEFÍCIOS */}
       {/* space-y-2: Dá espaçamento vertical entre as linhas */}
-      <div className="space-y-3 text-muted-foreground text-lg md:text-lg max-w-3xl mb-12">
+      <div className="space-y-3 text-muted-foreground text-lg md:text-lg max-w-3xl mb-7">
         <p>
-          <span className="text-foreground font-semibold">Resumos e exercícios resolvidos</span> de todas as cadeiras,
+          <span className="text-foreground font-semibold hover:text-primary transition-all cursor-default">Resumos e exercícios resolvidos</span> de todas as cadeiras,
         </p>
         <p>
-          <span className="text-foreground font-semibold">Exames e frequências</span> filtrados por ano, cadeira ou tópico,
+          <span className="text-foreground font-semibold hover:text-primary transition-all cursor-default">Exames e frequências</span> filtrados por ano, cadeira ou tópico,
         </p>
         <p>
-          <span className="text-foreground font-semibold">Calendário de avaliações/eventos</span> sincronizado com o telemóvel,
+          <span className="text-foreground font-semibold hover:text-primary transition-all cursor-default">Calendário de avaliações/eventos</span> sincronizado com o telemóvel,
         </p>
-        <p className="pt-2">E mais...</p>
+        <p className="pt-2">E mais... </p>
         
 
       </div>
 
       {/* BLOCO 4: BOTÃO (CTA) */}
       <Button 
-        variant="outline" 
+        variant="cta" 
         size="lg"
-        className="text-lg px-8 py-6 rounded-full border-white/20 hover:bg-white transition-all"
+        className="text-lg px-8 py-6 rounded-30 transition-all"
       >
         Quero saber mais
       </Button>
