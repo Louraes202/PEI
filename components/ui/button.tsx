@@ -23,8 +23,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
 
         // Variants criadas
-        cta: "bg-background border-2 border-white shadow-xs hover:bg-accent-10 dark:hover:bg-input/35 hover:[text-shadow:0_0_2px_rgba(255,255,255,0.7)] hover:border-ring",
-      },
+        cta: "bg-background border-2 border-white shadow-xs hover:bg-accent dark:hover:bg-input/35 hover:text-white hover:border-primary hover:shadow-[0_0_30px_-10px_var(--color-primary)] transition-all duration-300",      },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -47,8 +48,11 @@ export default function Home() {
         variant="cta" 
         size="lg"
         className="text-lg px-8 py-6 rounded-30 transition-all"
+        asChild
       >
-        Quero saber mais
+        <Link href="/about">
+          Quero saber mais
+        </Link>
       </Button>
 
     </main>
