@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portal EI - ESTGV
 
-## Getting Started
+![Status](https://img.shields.io/badge/Status-Development-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-v0.1.0-orange?style=for-the-badge)
 
-First, run the development server:
+O hub central definitivo para estudantes de Engenharia Informática da ESTGV (IPV).
+Uma plataforma comunitária focada em **conhecimento permanente**, curadoria de conteúdos e apoio académico, desenhada para complementar a comunicação efémera do Discord.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Uma arquitetura moderna, tipada e performante.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+- **Estilos:** [Tailwind CSS v4](https://tailwindcss.com/) (CSS-first config)
+- **UI Components:** [Shadcn UI](https://ui.shadcn.com/) (Radix Primitives)
+- **Backend & Auth:** [Supabase](https://supabase.com/) (PostgreSQL + RLS)
+- **Deployment:** [Vercel](https://vercel.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🗺️ Roadmap & Fases
 
-## Learn More
+O desenvolvimento segue uma estratégia incremental.
 
-To learn more about Next.js, take a look at the following resources:
+- [x] **Fase 0: Setup & Identidade**
+  - Definição da Stack (Next.js + Tailwind v4).
+  - Design System (Dark Mode, Cores, Tipografia).
+  - Estrutura do Repositório.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] **Fase 1: Waiting List (Atual)**
+  - [x] Landing Page Responsiva.
+  - [ ] Integração com Supabase (Recolha de Emails).
+  - [ ] Página "About" com visão do projeto.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [ ] **Fase 2: Portal MVP (v1.0)**
+  - Repositório de Ficheiros com Filtros (Ano, Cadeira, Tipo).
+  - Autenticação de Alunos.
+  - Calendário de Avaliações (Read-only).
 
-## Deploy on Vercel
+## 🤝 Contribuição
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este projeto segue um fluxo de **Git Flow** simplificado.
+1. `main` é a produção (estável).
+2. Cria branches para features: `git checkout -b feature/nova-funcionalidade`.
+3. Abre um Pull Request para review.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Desenvolvido por alunos de EI para alunos de EI.
