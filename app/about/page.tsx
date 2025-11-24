@@ -437,12 +437,6 @@ export default function AboutPage() {
                 action={handleSuggestionSubmit}
                 className="space-y-3 text-left"
               >
-                <label
-                  htmlFor="suggestion"
-                  className="text-sm font-medium text-foreground ml-1"
-                >
-                  Deixa a tua sugestão rápida:
-                </label>
                 <Textarea
                   id="suggestion"
                   name="suggestion"
