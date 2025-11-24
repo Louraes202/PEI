@@ -26,4 +26,4 @@ Este projeto segue um fluxo de **Git Flow** simplificado.
 
 ---
 
-Desenvolvido por alunos de EI para alunos de EI.
+Desenvolvido por um aluno de EI para alunos de EI.
