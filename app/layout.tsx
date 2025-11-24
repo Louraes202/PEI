@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bem-vindos ao Portal EI",
+  title: "Apresentação PEI",
   description: "Página de apresentação do Portal de Engenharia Informática.",
   icons: {
     icon: "logo-simple.svg",
@@ -36,6 +37,7 @@ export default function RootLayout({
         className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground`}
       >
         {children}
+        <Toaster position="bottom-center" />
       </body>
     </html>
   );

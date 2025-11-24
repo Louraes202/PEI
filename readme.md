@@ -17,7 +17,6 @@ Uma arquitetura moderna, tipada e performante.
 - **Backend & Auth:** [Supabase](https://supabase.com/) (PostgreSQL + RLS)
 - **Deployment:** [Vercel](https://vercel.com/)
 
-
 ## 🤝 Contribuição
 
 Este projeto segue um fluxo de **Git Flow** simplificado.
