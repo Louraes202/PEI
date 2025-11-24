@@ -301,9 +301,6 @@ export default function AboutPage() {
                             <div className="p-2.5 rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
                               <IconComponent className="h-6 w-6" />
                             </div>
-                            <Badge variant="secondary" className="text-xs text-muted-foreground bg-white/5 border-white/5">
-                              {feature.status}
-                            </Badge>
                           </div>
                           <div>
                             <CardTitle className="font-heading text-xl text-foreground group-hover:text-primary transition-colors mb-2">
@@ -361,7 +358,7 @@ export default function AboutPage() {
         )}
 
         <p className="text-sm text-muted-foreground mb-24 opacity-60 italic">
-          ...e muitas outras novidades planeadas no nosso Roteiro.
+          ...e outras novidades que estão a ser planeadas.
         </p>
 
         {/* 4. WAITING LIST (Inscrição) */}
@@ -388,7 +385,7 @@ export default function AboutPage() {
             <Input
               name="email"
               type="email"
-              placeholder="aluno@ipv.pt"
+              placeholder="alumni@alunos.estgv.ipv.pt"
               required
               disabled={isWaitingListPending}
               className="bg-white/5 border-white/10 h-12 text-lg focus-visible:ring-primary/50 w-full disabled:opacity-50"
