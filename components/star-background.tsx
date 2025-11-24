@@ -9,10 +9,9 @@ interface Star {
   alpha: number
 }
 
-// Definir a interface das Props
 interface StarBackgroundProps {
-  resistance?: number // quanto maior, mais lento o movimento do rato
-  starCount?: number // divisor para quantidade de estrelas
+  resistance?: number 
+  starCount?: number 
 }
 
 export function StarBackground({ resistance = 150, starCount = 12 }: StarBackgroundProps) {
@@ -23,7 +22,6 @@ export function StarBackground({ resistance = 150, starCount = 12 }: StarBackgro
   const STAR_MIN_SCALE = 0.2
   const OVERFLOW_THRESHOLD = 50
 
-  // Referências mutáveis
   const refs = useRef({
     stars: [] as Star[],
     velocity: { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 },
@@ -166,7 +164,8 @@ export function StarBackground({ resistance = 150, starCount = 12 }: StarBackgro
     const onTouchMove = (e: TouchEvent) => {
       state.touchInput = true
       movePointer(e.touches[0].clientX, e.touches[0].clientY)
-      e.preventDefault()
+      // FIX: Removi o 'e.preventDefault()' que estava aqui.
+      // Agora o scroll funciona E as estrelas mexem-se.
     }
 
     const onMouseLeave = () => {
@@ -179,7 +178,8 @@ export function StarBackground({ resistance = 150, starCount = 12 }: StarBackgro
 
     window.addEventListener('resize', resize)
     window.addEventListener('mousemove', onMouseMove)
-    window.addEventListener('touchmove', onTouchMove, { passive: false })
+    // FIX: Removi '{ passive: false }' para permitir o scroll nativo
+    window.addEventListener('touchmove', onTouchMove)
     document.addEventListener('mouseleave', onMouseLeave)
 
     return () => {
@@ -189,7 +189,7 @@ export function StarBackground({ resistance = 150, starCount = 12 }: StarBackgro
       window.removeEventListener('touchmove', onTouchMove)
       document.removeEventListener('mouseleave', onMouseLeave)
     }
-  }, [resistance, starCount])
+  }, [resistance, starCount]) 
 
   return (
     <canvas 

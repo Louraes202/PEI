@@ -43,7 +43,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-4 text-center bg-background cursor-default overflow-hidden relative">
+    <main className="flex min-h-screen flex-col items-center justify-center px-4 text-center bg-background cursor-default relative">
       
       {/* Background */}
       <div className="fixed inset-0 z-0">
