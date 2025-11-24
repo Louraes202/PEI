@@ -17,25 +17,6 @@ Uma arquitetura moderna, tipada e performante.
 - **Backend & Auth:** [Supabase](https://supabase.com/) (PostgreSQL + RLS)
 - **Deployment:** [Vercel](https://vercel.com/)
 
-## 🗺️ Roadmap & Fases
-
-O desenvolvimento segue uma estratégia incremental.
-
-- [x] **Fase 0: Setup & Identidade**
-  - Definição da Stack (Next.js + Tailwind v4).
-  - Design System (Dark Mode, Cores, Tipografia).
-  - Estrutura do Repositório.
-
-- [ ] **Fase 1: Waiting List (Atual)**
-  - [x] Landing Page Responsiva.
-  - [ ] Integração com Supabase (Recolha de Emails).
-  - [ ] Página "About" com visão do projeto.
-
-- [ ] **Fase 2: Portal MVP (v1.0)**
-  - Repositório de Ficheiros com Filtros (Ano, Cadeira, Tipo).
-  - Autenticação de Alunos.
-  - Calendário de Avaliações (Read-only).
-
 ## 🤝 Contribuição
 
 Este projeto segue um fluxo de **Git Flow** simplificado.
